@@ -56,3 +56,13 @@
         transform: translate(0, 0.5px) rotate(1.5deg);
     }
 }
+
+
+@font-face{
+    font-family: '造字工房悦圆(非商用)常规体';
+    src: url('../font/造字工房悦圆.ttf');
+}
+
+body{
+    font-family: '造字工房悦圆(非商用)常规体';
+}
