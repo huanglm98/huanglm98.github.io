@@ -5,7 +5,10 @@
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
     <meta name="keywords" content="英语期刊汇总, 7yue.club">
-    <meta name="description" content="英语期刊汇总 | 7yue.club">
+    <meta name="description" content="
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src) { return">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -34,7 +37,7 @@
 <body>
 
 <header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
+    <nav id="headNav" class="bg-color nav-transparent" style="position:absolute">
         <div id="navContainer" class="nav-wrapper container">
             <div class="brand-logo">
                 <a href="/" class="waves-effect waves-light">
@@ -331,7 +334,7 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        0
+                        52
                     </div>
                     
 
@@ -354,7 +357,25 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                
+                <script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
             </div>
             <hr/>
 
@@ -407,7 +428,12 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            1、准备谷歌浏览器 Tampermonkey
+heool11
+
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+          
                         
                     </div>
                     <div class="publish-info">
@@ -421,6 +447,18 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/教程/" target="_blank">
+                        <span class="chip bg-color">教程</span>
+                    </a>
+                    
+                    <a href="/tags/百度云/" target="_blank">
+                        <span class="chip bg-color">百度云</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -483,7 +521,7 @@
             <br>
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">73</span>&nbsp;字
+                class="white-color">239</span>&nbsp;字
             
             
             
